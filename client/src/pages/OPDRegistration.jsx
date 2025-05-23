@@ -231,7 +231,7 @@ function OPDRegistrationForm() {
     doc.setFontSize(14);
     doc.text('Hospital Appointment Confirmation', 105, 30, { align: 'center' });
     doc.setFontSize(10);
-    doc.text('Generated from Med-Space', 105, 36, { align: 'center' });
+    doc.text('Generated from HealNet', 105, 36, { align: 'center' });
     
     // Switch to dark text for body content
     doc.setTextColor(44, 62, 80); // Dark blue-grey for better readability
@@ -277,7 +277,7 @@ function OPDRegistrationForm() {
             { align: 'center' }
         );
         doc.text(
-            'Thank you for choosing Our Hospital. Please bring this document on the day of your appointment.\n 2024 Med-Space. All rights reserved.',
+            'Thank you for choosing Our Hospital. Please bring this document on the day of your appointment.\n 2024 HealNet. All rights reserved.',
             105,
             doc.internal.pageSize.height - 6,
             { align: 'center' }
@@ -567,7 +567,7 @@ function OPDRegistrationForm() {
           <div className="modal-content">
             <div className="OpdHeader">
               <img src="/favicon.png" className="image" alt="Logo" />
-              <p className="OPDText">Med-Space</p>
+              <p className="OPDText">HealNet</p>
             </div>
             <hr></hr>
 
@@ -630,7 +630,7 @@ function OPDRegistrationForm() {
               }}
             >
               <hr />
-              <p>&copy; 2024 Med-Space. All rights reserved. &trade;</p>
+              <p>&copy; 2024 HealNet. All rights reserved. &trade;</p>
             </footer>
           </div>
         </div>

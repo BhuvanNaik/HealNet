@@ -99,7 +99,7 @@ const Footer = () => {
   const socialMedia = [
     {
       Icon: FaGithub,
-      link: 'https://github.com/Luson045/medi-connect',
+      link: 'https://github.com/BhuvanNaik',
       color: '#333',
     },
     { Icon: FaDiscord, link: 'https://discord.gg', color: '#7289DA' },
@@ -161,7 +161,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap justify-between space-x-4">
-          {/* Med Space Section */}
+          {/* HealNet Section */}
           <div className="space-y-4 w-full md:w-auto">
             <Link
               to="/"
@@ -173,11 +173,11 @@ const Footer = () => {
                 alt="AgroTech AI Logo"
               />
               <span className="text-2xl font-bold bg-gradient-to-r from-[#1f2937] to-[#b6dbfc] bg-clip-text text-transparent group-hover:from-[#133859] group-hover:to-[#b6dbfc] transition-all duration-300">
-                Med Space
+                HealNet
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs">
-              The Med Space platform simplifies hospital management with
+              The HealNet platform simplifies hospital management with
               efficient queuing models, lab test, OPDs, and inventory management
               for medicines and consumables.
             </p>
@@ -318,13 +318,13 @@ const Footer = () => {
               ? 'text-gray-300 text-sm md:text-base mt-2'
               : 'text-gray-900 text-sm md:text-base mt-2'
           } `}>
-            “The information provided on Med-Space is intended for general
+            "The information provided on HealNet is intended for general
             informational purposes only and should not be considered as medical
             advice, diagnosis, or treatment. Always seek the advice of a
             qualified healthcare provider for any medical condition or
-            treatment. Med-Space facilitates OPD appointment booking and
+            treatment. HealNet facilitates OPD appointment booking and
             hospital data sharing, but it does not endorse or guarantee the
-            quality of services provided by healthcare providers.”
+            quality of services provided by healthcare providers."
           </p>
         </div>
 
@@ -333,7 +333,7 @@ const Footer = () => {
             <FaRegCopyright className="mx-1" /> {currentYear} All Rights
             Reserved
             <span className="font-bold ml-2 bg-[#b6dbfc] text-[#1f2937] px-2 py-1 rounded transition-all duration-300 hover:bg-[#1f2937] hover:text-[#b6dbfc]">
-              Medi Connect
+              HealNet
             </span>
           </p>
         </div>

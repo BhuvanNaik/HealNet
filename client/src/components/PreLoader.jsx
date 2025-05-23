@@ -12,7 +12,7 @@ const Preloader = () => {
           className="animate-stroke"
           style={{ fontWeight: "bold" }}
         >
-          Med Space
+          HealNet
         </text>
       </svg>
     </div>

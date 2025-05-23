@@ -8,76 +8,54 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useRecoilValue } from 'recoil'; // Import Recoil
 import { mode } from '../store/atom'; // Import the mode atom
-import luson from '../assets/images/luson.jpg';
+import bhuvan from '../assets/images/luson.jpg';
 
 // Team member data
 const teamMembers = [
   {
     id: 1,
-    name: 'Luson Basumatary',
-    role: 'Lead Developer || Founder',
+    name: 'Pooja N R',
+    role: 'Team Leader || ML Developer',
     description:
-      'Luson Basumatary brings a wealth of experience in software development and a passion for innovation. He leads the team in creating a robust and user-friendly platform.',
-    imageUrl: luson,
-    linkedin: 'https://www.linkedin.com/in/luson-basumatary-79a93b244/',
-    github: 'https://github.com/Luson045',
-    email: 'mailto:luson@example.com',
+      'Pooja N R leads our team with expertise in Machine Learning and software development. She brings innovative solutions and technical leadership to create a robust and intelligent healthcare platform.',
+    imageUrl: 'https://via.placeholder.com/150',
+    linkedin: 'https://www.linkedin.com/in/pooja-n-r',
+    github: 'https://github.com/pooja-n-r',
+    email: 'mailto:pooja@example.com',
   },
   {
     id: 2,
-    name: 'Rohit Bansal',
-    role: 'Frontend Developer',
+    name: 'Sahana K S',
+    role: 'UI/UX Designer || Frontend Developer',
     description:
-      'Rohit specializes in crafting intuitive user interfaces, translating complex requirements into accessible designs.',
+      'Sahana combines her expertise in UI/UX design with frontend development to create intuitive and engaging user interfaces. She ensures our platform is both visually appealing and highly functional.',
     imageUrl: 'https://via.placeholder.com/150',
-    linkedin: 'https://www.linkedin.com/in/luson-basumatary',
-    github: 'https://github.com/luson045',
-    email: 'mailto:luson@example.com',
+    linkedin: 'https://www.linkedin.com/in/sahana-k-s',
+    github: 'https://github.com/sahana-k-s',
+    email: 'mailto:sahana@example.com',
   },
   {
     id: 3,
-    name: 'Kalpesh Jain',
-    role: 'UI/UX Designer',
+    name: 'Raju',
+    role: 'Backend Developer',
     description:
-      'Kalpesh is focused on making our platform user-friendly and engaging, ensuring seamless interactions.',
+      'Raju specializes in backend development, ensuring robust server-side operations and efficient database management. His expertise helps maintain the platform\'s performance and reliability.',
     imageUrl: 'https://via.placeholder.com/150',
-    linkedin: 'https://www.linkedin.com/in/luson-basumatary',
-    github: 'https://github.com/luson045',
-    email: 'mailto:luson@example.com',
+    linkedin: 'https://www.linkedin.com/in/raju',
+    github: 'https://github.com/raju',
+    email: 'mailto:raju@example.com',
   },
   {
     id: 4,
-    name: 'Simranpreet Kaur',
-    role: 'Graphic Designer',
+    name: 'Bhuvan M Naik',
+    role: 'Full Stack Support',
     description:
-      'Simranpreet creates compelling graphics and visual elements that enhance the user experience.',
+      'Bhuvan provides comprehensive full stack support, bridging the gap between frontend and backend development. His versatile skills help ensure seamless integration and optimal functionality across the platform.',
     imageUrl: 'https://via.placeholder.com/150',
-    linkedin: 'https://www.linkedin.com/in/luson-basumatary',
-    github: 'https://github.com/luson045',
-    email: 'mailto:luson@example.com',
-  },
-  {
-    id: 5,
-    name: 'Kartik Kaushal',
-    role: 'Healthcare Researcher',
-    description:
-      'Kartik ensures that our platform meets high standards by staying updated with the latest trends in healthcare.',
-    imageUrl: 'https://via.placeholder.com/150',
-    linkedin: 'https://www.linkedin.com/in/luson-basumatary',
-    github: 'https://github.com/luson045',
-    email: 'mailto:luson@example.com',
-  },
-  {
-    id: 6,
-    name: 'Shubham',
-    role: 'Technology Researcher',
-    description:
-      'Shubham explores emerging technologies to integrate cutting-edge features into our platform.',
-    imageUrl: 'https://via.placeholder.com/150',
-    linkedin: 'https://www.linkedin.com/in/luson-basumatary',
-    github: 'https://github.com/luson045',
-    email: 'mailto:luson@example.com',
-  },
+    linkedin: 'https://www.linkedin.com/in/bhuvan-m-naik',
+    github: 'https://github.com/BhuvanNaik',
+    email: 'mailto:bhuvan@example.com',
+  }
 ];
 
 const AboutPage = () => {
@@ -124,7 +102,7 @@ const AboutPage = () => {
               Our Vision
             </VisionTitle>
             <VisionText dark={dark} className="font-sans ">
-              At Med-Space, we envision a world where accessing outpatient care
+              At HealNet, we envision a world where accessing outpatient care
               is as simple as a few clicks. By leveraging technology and
               innovation, we aim to provide a platform that bridges the gap
               between patients and healthcare providers, making high-quality
@@ -143,7 +121,7 @@ const AboutPage = () => {
               healthcare providers alike. We are committed to building
               technology that simplifies healthcare processes, improves access,
               and enhances patient experience. With a focus on continuous
-              innovation, we work to ensure that the Medi-Connect platform
+              innovation, we work to ensure that the HealNet platform
               evolves to meet the changing needs of the healthcare industry.
             </MissionText>
           </Box>
@@ -429,18 +407,6 @@ const AboutPage = () => {
             Nearby Hospitals
           </StatItem>
         </StatsSection>
-        <GitTeamTitle dark={dark}>
-          Our Amazing Open Source Contributors
-        </GitTeamTitle>
-        <div style={{ textAlign: 'center' }}>
-          <a href="https://github.com/Luson045/medi-connect/graphs/contributors">
-            <img
-              alt="git team"
-              src="https://contrib.rocks/image?repo=Luson045/medi-connect&&max=1000"
-            />
-          </a>
-        </div>
-
         <JoinUsSection dark={dark}>
           <JoinUsTitle dark={dark}>Join Us on Our Journey</JoinUsTitle>
           <JoinUsText dark={dark}>

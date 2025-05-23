@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink to="/">
           <img
             className="h-12 md:h-16"
-            alt="medi-connects logo"
+            alt="HealNet logo"
             src="logo.png"
           />
         </NavLink>
@@ -183,7 +183,7 @@ const Navbar = () => {
             </a>
           </div>
           <p className="text-sm">
-            &copy; 2024 MediConnect. All rights reserved.
+            &copy; 2024 HealNet. All rights reserved.
           </p>
         </div>
       </div>

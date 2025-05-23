@@ -65,7 +65,7 @@ const Navbar = () => {
       <NavLink to="/">
         <img
           className="h-10 sm:pl-2 md:h-14"
-          alt="medi-connects logo"
+          alt="HealNet logo"
           src="../logo.png"
           onClick={() => setMobileMenuOpen(false)}
         />

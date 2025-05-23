@@ -1,28 +1,53 @@
 {
-  "name": "medi-connect",
+  "name": "HealNet",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "@eslint/js": "^9.12.0",
-    "eslint": "^9.12.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.1",
-    "globals": "^15.10.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3"
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "tailwindcss": "^3.4.1",
+    "styled-components": "^6.1.8",
+    "recoil": "^0.7.7",
+    "react-icons": "^5.0.1",
+    "framer-motion": "^11.0.3",
+    "react-toastify": "^10.0.4"
   },
   "scripts": {
-    "prepare": "husky install"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "format": "prettier --write src/**/*.{js,jsx,css,md}"
   },
-  "lint-staged": {
-    "client/src/**/*.{js,jsx,css}": "prettier --write",
-    "client/src/**/*.{js,jsx}": "eslint --fix --max-warnings=0",
-    "server/**/**/*.js": [
-      "prettier --write",
-      "eslint --fix --max-warnings=0"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.2.5"
   }
 }

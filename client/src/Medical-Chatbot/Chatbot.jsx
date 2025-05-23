@@ -14,7 +14,7 @@ const Chatbot = ({isOpen, setIsOpen}) => {
   const textareaRef = useRef(null);
   const dark = useRecoilValue(mode); // Access the dark mode state
   const about_message =
-    'At Med-Space, we envision a world where accessing outpatient care is as simple as a few clicks. By leveraging technology and innovation, we aim to provide a platform that bridges the gap between patients and healthcare providers, making high-quality care accessible to everyone, anywhere. Founder of Med-space is Luson Basumatary.';
+    'At HealNet, we envision a world where accessing outpatient care is as simple as a few clicks. By leveraging technology and innovation, we aim to provide a platform that bridges the gap between patients and healthcare providers, making high-quality care accessible to everyone, anywhere. Founder of HealNet is BhuvanNaik.';
   const loadConfig = useCallback(async () => {
     try {
       setApiKey('...'); //add your api key

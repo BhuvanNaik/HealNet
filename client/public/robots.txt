@@ -11,4 +11,4 @@ Allow: /services               # Allow crawling of the service list
 Disallow: /*   #disallow to all other pages
 
 # Link to your sitemap for better crawling
-Sitemap: https://med-space.vercel.app/sitemap.xml
+Sitemap: https://healnet.vercel.app/sitemap.xml

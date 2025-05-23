@@ -1,42 +1,56 @@
-// Dynamically set the base URL depending on the environment (production vs local development)
-let BASE_URL;
-
-// Check if the frontend is running in production or localhost
-if (window.location.hostname === 'localhost') {
-  // If localhost, use the local backend
-  BASE_URL = 'http://localhost:8080';
-} else {
-  // If deployed, use the production backend URL
-  BASE_URL = 'https://medi-connect-f671.onrender.com';
-}
-
-// Helper function to dynamically replace 'localhost:8080' in any API request with the production URL when deployed
-const adjustUrl = (url) => {
-  if (window.location.hostname !== 'localhost' && url.includes('localhost:8080')) {
-    // If the environment is production and URL contains localhost, replace it with the production URL
-    return url.replace('localhost:8080', 'https://medi-connect-f671.onrender.com');
-  }
-  // Otherwise, return the original URL
-  return url;
-};
-
-// Use adjustUrl to ensure URLs are always correct
-export const databaseUrls = {
+// Mock data for frontend development
+export const mockData = {
   auth: {
-    login: adjustUrl(`${BASE_URL}/auth/login`),
-    register: adjustUrl(`${BASE_URL}/auth/register`),
-    profile: adjustUrl(`${BASE_URL}/auth/profile`),
-    editProfile: adjustUrl(`${BASE_URL}/auth/profile/editprofile`),
-    addDoctor: adjustUrl(`${BASE_URL}/auth/profile/adddoctor`),
+    login: {
+      token: 'mock-token',
+      user: {
+        id: 1,
+        name: 'Test User',
+        email: 'test@example.com',
+        role: 'user'
+      }
+    },
+    register: {
+      success: true,
+      message: 'Registration successful'
+    },
+    profile: {
+      id: 1,
+      name: 'Test User',
+      email: 'test@example.com',
+      role: 'user',
+      appointments: []
+    }
   },
   hospitals: {
-    all: adjustUrl(`${BASE_URL}/hospitalapi`),
-    fromId: adjustUrl(`${BASE_URL}/hospitalapi/_id`),
-    bookHospital: adjustUrl(`${BASE_URL}/hospitalapi/hospitals/_id/book`),
-    appointments: adjustUrl(`${BASE_URL}/hospitalapi/appointments`),
-    emergency: adjustUrl(`${BASE_URL}/hospitalapi/emergency`),
-  },
-  patient: {
-    appointments: adjustUrl(`${BASE_URL}/patientapi/appointments`),
-  },
+    all: [
+      {
+        id: 1,
+        name: 'City Hospital',
+        address: '123 Main St',
+        specializations: ['General', 'Cardiology'],
+        rating: 4.5
+      },
+      {
+        id: 2,
+        name: 'Community Medical Center',
+        address: '456 Oak Ave',
+        specializations: ['Pediatrics', 'Orthopedics'],
+        rating: 4.2
+      }
+    ],
+    appointments: [
+      {
+        id: 1,
+        hospitalId: 1,
+        patientName: 'John Doe',
+        date: '2024-03-20',
+        time: '10:00 AM',
+        status: 'confirmed'
+      }
+    ]
+  }
 };
+
+// Export mock data as the main export
+export const databaseUrls = mockData;
